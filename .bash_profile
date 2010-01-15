@@ -1,5 +1,9 @@
-export PATH=$PATH:/usr/local/mysql/bin:/usr/local/mongo/bin:/opt/local/bin:/opt/local/sbin
+export PATH=/usr/local/bin:$PATH:/usr/local/mysql/bin:/usr/local/mongo/bin:/opt/local/bin:/opt/local/sbin
 alias ls="ls -G"
+alias git=hub
+alias gitship="git pull optimor master && git push origin master && git push optimor master"
+alias gst="git status"
+alias gbr="git branch"
 export PYTHONPATH=.
 export PYTHONSTARTUP=$HOME/.pythonrc.py
 #export GIT_PAGER=mate
@@ -60,3 +64,5 @@ PROMPT_COMMAND=prompt_func
 # The orginal version is saved in .bash_profile.pysave
 PATH="/Library/Frameworks/Python.framework/Versions/2.6/bin:${PATH}"
 export PATH
+
+test -r /sw/bin/init.sh && . /sw/bin/init.sh

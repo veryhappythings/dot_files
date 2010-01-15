@@ -1,65 +1,42 @@
-" An example for a gvimrc file.
-" The commands in this are executed when the GUI is started.
-"
-" Maintainer:	Bram Moolenaar <Bram@vim.org>
-" Last change:	2001 Sep 02
-"
-" To use it, copy it to
-"     for Unix and OS/2:  ~/.gvimrc
-"	      for Amiga:  s:.gvimrc
-"  for MS-DOS and Win32:  $VIM\_gvimrc
-"	    for OpenVMS:  sys$login:.gvimrc
-
-" Make external commands work through a pipe instead of a pseudo-tty
-"set noguipty
-
-" set the X11 font to use
-" set guifont=-misc-fixed-medium-r-normal--14-130-75-75-c-70-iso8859-1
-
-set ch=2		" Make command line two lines high
-
-set mousehide		" Hide the mouse when typing text
-
-" Make shift-insert work like in Xterm
-map <S-Insert> <MiddleMouse>
-map! <S-Insert> <MiddleMouse>
-
-" Only do this for Vim version 5.0 and later.
-if version >= 500
-
-  " I like highlighting strings inside C comments
-  let c_comment_strings=1
-
-  " Switch on syntax highlighting if it wasn't on yet.
-  if !exists("syntax_on")
-    syntax on
-  endif
-
-  " Switch on search pattern highlighting.
-  set hlsearch
-
-  " For Win32 version, have "K" lookup the keyword in a help file
-  "if has("win32")
-  "  let winhelpfile='windows.hlp'
-  "  map K :execute "!start winhlp32 -k <cword> " . winhelpfile <CR>
-  "endif
-
-  " Set nice colors
-  " background for normal text is light grey
-  " Text below the last line is darker grey
-  " Cursor is green, Cyan when ":lmap" mappings are active
-  " Constants are not underlined but have a slightly lighter background
-  highlight Normal guibg=grey90
-  highlight Cursor guibg=Green guifg=NONE
-  highlight lCursor guibg=Cyan guifg=NONE
-  highlight NonText guibg=grey80
-  highlight Constant gui=NONE guibg=grey95
-  highlight Special gui=NONE guibg=grey95
-
-endif
-
-:set gfn=Monaco:h12
+" Colour scheme
 colorscheme molokai
 let g:molokai_original = 1
-:set macatsui
+
+" Gui options
+set guioptions -=T
+set number
+set fuoptions=maxvert,maxhorz
+set columns=136
+set lines=40
+set nomousefocus
+set mousehide
+
+" NERDTree settings
+let NERDTreeIgnore=['\.pyc$', '\~$']
+let NERDTreeHighlightCursorline = 1
+
+" Disable bell
+set vb t_vb=
+
+" Firefox-style command-N to jump to tabs
+map <silent> <D-1> :tabn 1<CR>
+map <silent> <D-2> :tabn 2<CR>
+map <silent> <D-3> :tabn 3<CR>
+map <silent> <D-4> :tabn 4<CR>
+map <silent> <D-5> :tabn 5<CR>
+map <silent> <D-6> :tabn 6<CR>
+map <silent> <D-7> :tabn 7<CR>
+map <silent> <D-8> :tabn 8<CR>
+map <silent> <D-9> :tabn 9<CR>
+
+" bind command-] to shift right
+nmap <D-]> >>
+vmap <D-]> >>
+imap <D-]> <C-O>>>
+ 
+" bind command-[ to shift left
+nmap <D-[> <<
+vmap <D-[> <<
+imap <D-[> <C-O><<
+
 
