@@ -6,7 +6,7 @@ export PATH=~/bin:/usr/local/bin:$PATH:/usr/local/mysql/bin:/usr/local/mongo/bin
 export PYTHONPATH=.
 export PYTHONSTARTUP=$HOME/.pythonrc.py
 #export GIT_PAGER=mate
-#export EDITOR='mate -w'
+export EDITOR='mvim -f'
 
 # Setting PATH for MacPython 2.6
 # The orginal version is saved in .bash_profile.pysave
