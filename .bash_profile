@@ -5,6 +5,7 @@ export PATH=/Applications/Shoes.app/Contents/MacOS:/Users/mac/.gem/ruby/1.8/bin:
 export PATH=~/bin:/usr/local/bin:$PATH:/usr/local/mysql/bin:/usr/local/mongo/bin:/opt/local/bin:/opt/local/sbin
 export PYTHONPATH=.
 export PYTHONSTARTUP=$HOME/.pythonrc.py
+export RUBYOPT="rubygems"
 #export GIT_PAGER=mate
 export EDITOR='mvim -f'
 
