@@ -3,6 +3,8 @@ colorscheme molokai
 set expandtab
 set tabstop=4
 
+filetype plugin indent on
+
 " Strip trailing whitespace on save while retaining cursor position
 fun! <SID>StripTrailingWhitespaces()
     let l = line(".")
