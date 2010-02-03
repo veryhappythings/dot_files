@@ -15,3 +15,7 @@ endfun
 
 autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
 
+" Syntastic
+:highlight SignColumn guibg=darkgrey
+let g:syntastic_enable_signs=1
+let g:syntastic_auto_loc_list=0
