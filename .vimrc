@@ -2,6 +2,7 @@ colorscheme molokai
 
 set expandtab
 set tabstop=4
+set ruler
 
 filetype plugin indent on
 
