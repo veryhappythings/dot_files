@@ -14,14 +14,25 @@ set mousehide
 set nowrap
 
 " NERDTree settings
-let NERDTreeIgnore=['\.pyc$', '\~$']
+let NERDTreeIgnore = ['\.pyc$', '\~$']
 let NERDTreeHighlightCursorline = 1
+
+" Fuzzy Finder settings
+let g:fuzzy_ignore = '*.pyc,*~,*.o,*.db,.DS_Store'
 
 " Disable bell
 set vb t_vb=
 
-" Syntastic
 
+" Mappings!
+" --------
+
+let mapleader = '\'
+
+map <leader>cwd :cd %:p:h<CR>
+
+" Textmate-Fuzzy-Finder
+map <leader>t :FuzzyFinderTextMate<CR>
 
 " NERDTree maps
 map <F2> :NERDTreeToggle<CR>
