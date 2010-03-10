@@ -1,16 +1,14 @@
 " Pathogen
 call pathogen#runtime_append_all_bundles()
 
-colorscheme molokai
+colorscheme molokai_mac
+let g:molokai_original = 0
 
 " Default indenting etc
 set expandtab
 set tabstop=4
 set ruler
 set number
-set fuoptions=maxvert,maxhorz
-set columns=136
-set lines=40
 set nomousefocus
 set mousehide
 set nowrap
