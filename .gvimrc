@@ -1,6 +1,7 @@
 " Colour scheme
-colorscheme molokai
+colorscheme molokai_mac
 let g:molokai_original = 0
+set guifont=Monaco:h12
 
 " Gui options
 set guioptions -=T
