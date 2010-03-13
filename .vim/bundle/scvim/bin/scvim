@@ -1,0 +1,15 @@
+#!/bin/sh
+
+vim=mvim
+#parse ops
+while getopts "gh" opt; do
+	case $opt in
+		h  )	echo "supercollider in vim"
+				echo "usage:\nscvim [-h] [-g]"
+				echo "\t -h prints this help"
+				exit 0;;
+	esac
+done
+
+exec $vim --cmd "source ~/.vim/scvimrc" -c "set filetype=supercollider | runtime bundle/scvim/ftplugin/supercollider.vim | SClangStart" $@
+
