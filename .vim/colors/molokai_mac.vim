@@ -6,6 +6,7 @@
 " by Wimer Hazenberg and its darker variant
 " by Hamish Stuart Macpherson
 "
+" A few additional edits by Mac (http://veryhappythings.github.com)
 
 hi clear
 
