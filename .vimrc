@@ -46,7 +46,7 @@ let mapleader = '\'
 map <leader>cwd :cd %:p:h<CR>
 
 " Textmate-Fuzzy-Finder
-map <leader>t :FuzzyFinderTextMate<CR>
+" map <leader>t :FuzzyFinderTextMate<CR>
 
 " NERDTree maps
 map <F2> :NERDTreeToggle<CR>
