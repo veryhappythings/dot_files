@@ -13,6 +13,8 @@ setlocal comments=fb:*,fb:-,fb:+,n:> commentstring=>\ %s
 setlocal formatoptions+=tcqln
 setlocal formatlistpat=^\\s*\\d\\+\\.\\s\\+\\\|^[-*+]\\s\\+
 
+:set wrap linebreak nolist
+
 let b:undo_ftplugin .= "|setl cms< com< fo<"
 
 " vim:set sw=2:
