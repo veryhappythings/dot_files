@@ -15,7 +15,7 @@ export LSCOLORS=ExFxCxDxBxegedabagacad
 TERM=xterm-color; export TERM
 
 # bash vi mode
-set -o vi
+# set -o vi
 
 # Setting PATH for MacPython 2.6
 # The orginal version is saved in .bash_profile.pysave
