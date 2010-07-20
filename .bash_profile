@@ -5,7 +5,6 @@ source ~/.bash/functions.sh
 export PATH=/usr/local/bin:$PATH:/usr/local/mysql/bin:/usr/local/mongo/bin:/opt/local/bin:/opt/local/sbin
 export PYTHONPATH=.
 export PYTHONSTARTUP=$HOME/.pythonrc.py
-export RUBYOPT="rubygems"
 #export GIT_PAGER=mate
 #export EDITOR='mate -w'
 export EDITOR='mvim -f'
@@ -23,3 +22,6 @@ PATH="/Library/Frameworks/Python.framework/Versions/2.6/bin:${PATH}"
 export PATH
 
 test -r /sw/bin/init.sh && . /sw/bin/init.sh
+
+# RVM
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
