@@ -96,3 +96,12 @@ noremap <silent><leader>qq <Esc>:call QFixToggle(0)<CR>
 map [q :cprev<CR>
 map ]q :cnext<CR>
 
+inoremap  <Up>     <NOP>
+inoremap  <Down>   <NOP>
+inoremap  <Left>   <NOP>
+inoremap  <Right>  <NOP>
+noremap   <Up>     <NOP>
+noremap   <Down>   <NOP>
+noremap   <Left>   <NOP>
+noremap   <Right>  <NOP>
+
