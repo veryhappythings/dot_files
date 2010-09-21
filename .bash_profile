@@ -5,8 +5,6 @@ source ~/.bash/functions.sh
 export PATH=/usr/local/bin:$PATH:/usr/local/mysql/bin:/usr/local/mongo/bin:/opt/local/bin:/opt/local/sbin
 export PYTHONPATH=.
 export PYTHONSTARTUP=$HOME/.pythonrc.py
-#export GIT_PAGER=mate
-#export EDITOR='mate -w'
 export EDITOR='mvim -f'
 export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
