@@ -1,3 +1,4 @@
 *.swp
 .DS_Store
 .vim/bundle/vim-peepopen
+.vim/.netrwhist
