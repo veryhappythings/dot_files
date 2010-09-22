@@ -2,7 +2,7 @@ source ~/.bash/aliases.sh
 source ~/.bash/git_ps1.sh
 source ~/.bash/functions.sh
 
-export PATH=/usr/local/bin:$PATH:/usr/local/mysql/bin:/usr/local/mongo/bin:/opt/local/bin:/opt/local/sbin
+export PATH=/Users/mac/bin:/usr/local/bin:$PATH:/usr/local/mysql/bin:/usr/local/mongo/bin:/opt/local/bin:/opt/local/sbin
 export PYTHONPATH=.
 export PYTHONSTARTUP=$HOME/.pythonrc.py
 #export GIT_PAGER=mate
