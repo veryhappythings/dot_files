@@ -47,10 +47,10 @@ set wildignore+=*.o,*.obj,.git,*.pyc,*.swp,.DS_Store
 
 let mapleader = '\'
 
-map <leader>cwd :cd %:p:h<CR>
+imap jj <esc>
 
-" Textmate-Fuzzy-Finder
-" map <leader>t :FuzzyFinderTextMate<CR>
+" cwd to current file's path
+map <leader>cwd :cd %:p:h<CR>
 
 " NERDTree maps
 map <F2> :NERDTreeToggle<CR>
@@ -96,6 +96,7 @@ noremap <silent><leader>qq <Esc>:call QFixToggle(0)<CR>
 map [q :cprev<CR>
 map ]q :cnext<CR>
 
+" Disable arrow keys
 inoremap  <Up>     <NOP>
 inoremap  <Down>   <NOP>
 inoremap  <Left>   <NOP>
