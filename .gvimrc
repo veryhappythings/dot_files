@@ -5,7 +5,7 @@ set guifont=Menlo:h13
 
 " Gui options
 set guioptions -=T
-set guioptions +=b
+set guioptions +=bac
 set fuoptions=maxvert,maxhorz
 set columns=136
 set lines=40
