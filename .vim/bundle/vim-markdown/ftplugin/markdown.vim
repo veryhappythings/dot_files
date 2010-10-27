@@ -18,3 +18,13 @@ setlocal formatlistpat=^\\s*\\d\\+\\.\\s\\+\\\|^[-*+]\\s\\+
 let b:undo_ftplugin .= "|setl cms< com< fo<"
 
 " vim:set sw=2:
+
+inoremap  <Up>     gk
+inoremap  <Down>   gj
+inoremap  <Left>   h
+inoremap  <Right>  l
+noremap   <Up>     gk
+noremap   <Down>   gj
+noremap  <Left>    h
+noremap  <Right>   l
+
