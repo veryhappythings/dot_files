@@ -14,6 +14,8 @@ set mousehide
 set nowrap
 
 filetype plugin indent on
+" Load Less files as the CSS filetype
+au BufRead,BufNewFile *.less setfiletype css
 
 " Disable bell
 set vb t_vb=
