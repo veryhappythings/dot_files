@@ -6,7 +6,6 @@ let g:molokai_original = 0
 
 " Default indenting etc
 set expandtab
-set tabstop=4
 set ruler
 set number
 set nomousefocus
@@ -14,12 +13,12 @@ set mousehide
 set nowrap
 
 " My default tab prefs
-setlocal tabstop=4
-setlocal softtabstop=4
-setlocal shiftwidth=4
-setlocal smarttab
-setlocal expandtab
-setlocal smartindent
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set smarttab
+set expandtab
+set smartindent
 
 filetype plugin indent on
 " Load Less files as the CSS filetype
