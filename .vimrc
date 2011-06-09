@@ -45,13 +45,6 @@ let g:syntastic_auto_loc_list=0
 let NERDTreeIgnore = ['\.pyc$', '\~$']
 let NERDTreeHighlightCursorline = 1
 
-" Fuzzy Finder settings
-let g:fuzzy_ignore = '*.pyc,*~,*.o,*.db,.DS_Store'
-
-" Command-T settings
-let g:CommandTNeverShowDotFiles=1
-set wildignore+=*.o,*.obj,.git,*.pyc,*.swp,.DS_Store
-
 " mappings
 
 let mapleader = '\'
