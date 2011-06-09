@@ -1,7 +1,6 @@
 source ~/.bash/aliases.sh
 source ~/.bash/git_ps1.sh
 source ~/.bash/functions.sh
-source ~/.bash/complete.sh
 
 export PATH=/Users/mac/bin:/usr/local/bin:$PATH:/usr/local/mysql/bin:/usr/local/mongo/bin:/opt/local/bin:/opt/local/sbin
 export PATH=/usr/local/Cellar/python/2.7.1/bin:$PATH
