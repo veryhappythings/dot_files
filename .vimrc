@@ -1,5 +1,5 @@
 " Pathogen
-call pathogen#runtime_append_all_bundles()
+call pathogen#infect()
 
 colorscheme molokai_mac
 let g:molokai_original = 0
