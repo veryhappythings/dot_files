@@ -57,6 +57,9 @@ map <leader>cwd :cd %:p:h<CR>
 " NERDTree maps
 map <F2> :NERDTreeToggle<CR>
 
+" ConqueTerm map
+map <leader>t :ConqueTerm bash <CR>
+
 " Firefox-style command-N to jump to tabs
 map <silent> <D-1> :tabn 1<CR>
 map <silent> <D-2> :tabn 2<CR>
