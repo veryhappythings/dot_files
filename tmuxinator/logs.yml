@@ -1,0 +1,11 @@
+# ~/.tmuxinator/enoch-ubuntu-logs.yml
+# you can make as many tabs as you wish...
+
+project_name: enoch-ubuntu-logs
+project_root: ~/Documents/code
+tabs:
+  - server:
+      layout: even-horizontal
+      panes:
+        - ssh enoch-ubuntu tail -f /var/log/osirium/server/debug.log
+        - ssh enoch-ubuntu tail -f /var/log/osirium/server/error.log

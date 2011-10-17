@@ -1,0 +1,15 @@
+# ~/.tmuxinator/enoch-ubuntu.yml
+# you can make as many tabs as you wish...
+
+project_name: enoch-ubuntu
+project_root: ~/Documents/code
+tabs:
+  - tests:
+      layout: even-horizontal
+      panes:
+        - ssh osiriumd@enoch-ubuntu -t "cd /mnt/build/submodules/eggs; bash"
+  - bash:
+      layout: even-horizontal
+      panes:
+        - ssh osiriumd@enoch-ubuntu -t "cd /var/logs/osirium"
+        - ssh osiriumd@enoch-ubuntu -t "cd /mnt/build/submodules/eggs"
