@@ -1,6 +1,10 @@
 " Pathogen
 call pathogen#infect()
 
+if ! has('gui')
+  set t_Co=256
+endif
+
 colorscheme molokai_mac
 let g:molokai_original = 0
 
