@@ -25,4 +25,7 @@ test -r /sw/bin/init.sh && . /sw/bin/init.sh
 # RVM
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
+# Tmuxinator
+[[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
+
 source /usr/local/share/python/virtualenvwrapper.sh
