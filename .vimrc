@@ -7,6 +7,7 @@ endif
 
 colorscheme molokai_mac
 let g:molokai_original = 0
+syntax on
 
 " Default indenting etc
 set expandtab
@@ -121,3 +122,6 @@ noremap   <Down>   <NOP>
 noremap   <Left>   <NOP>
 noremap   <Right>  <NOP>
 
+
+nmap <leader>w "adiww"sdw"aPF,"sPww
+nmap <leader>b "sdiwF,b"adiw"sPww"aPbbb
