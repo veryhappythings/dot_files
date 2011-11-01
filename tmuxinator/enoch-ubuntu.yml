@@ -13,3 +13,7 @@ tabs:
       panes:
         - ssh osiriumd@enoch-ubuntu -t "cd /var/log/osirium; bash"
         - ssh osiriumd@enoch-ubuntu -t "cd /mnt/build/submodules/eggs; bash"
+  - db:
+      layout: even-horizontal
+      panes:
+        - ssh osiriumd@enoch-ubuntu -t "psql osirium"

@@ -1,7 +1,7 @@
 # ~/.tmuxinator/enoch-ubuntu-logs.yml
 # you can make as many tabs as you wish...
 
-project_name: enoch-ubuntu-logs
+project_name: logs
 project_root: ~/Documents/code
 tabs:
   - server:

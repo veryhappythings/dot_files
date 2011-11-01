@@ -1,0 +1,10 @@
+# ~/.tmuxinator/enoch-ubuntu-logs.yml
+# you can make as many tabs as you wish...
+
+project_name: foundry
+project_root: ~/Documents/code/test-management/test_tools/EmulatedDevices/Foundry_v04/
+tabs:
+  - foundry:
+      layout: even-horizontal
+      panes:
+        - source ~/.virtualenvs/osirium/bin/activate && python main.py -c1 -b16000 --logfileinfo foundry_os_v04.xml
