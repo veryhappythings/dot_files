@@ -47,7 +47,7 @@ let g:syntastic_enable_signs=1
 let g:syntastic_auto_loc_list=0
 
 " NERDTree settings
-let NERDTreeIgnore = ['\.pyc$', '\~$']
+let NERDTreeIgnore = ['\.pyc$', '\~$', '\.class$']
 let NERDTreeHighlightCursorline = 1
 
 " mappings
