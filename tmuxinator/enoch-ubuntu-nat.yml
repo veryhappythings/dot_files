@@ -1,0 +1,16 @@
+project_name: enoch-ubuntu-nat
+project_root: ~/Documents/code
+tabs:
+  - tests:
+      layout: even-horizontal
+      panes:
+        - ssh osiriumd@enoch-ubuntu-nat -t "cd /mnt/build/submodules/eggs; bash"
+  - bash:
+      layout: even-horizontal
+      panes:
+        - ssh osiriumd@enoch-ubuntu-nat -t "cd /var/log/osirium; bash"
+        - ssh osiriumd@enoch-ubuntu-nat -t "cd /mnt/build/submodules/eggs; bash"
+  - db:
+      layout: even-horizontal
+      panes:
+        - ssh osiriumd@enoch-ubuntu-nat -t "psql osirium"
