@@ -122,6 +122,17 @@ noremap   <Down>   <NOP>
 noremap   <Left>   <NOP>
 noremap   <Right>  <NOP>
 
+" Bash like keys for the command line
+" Thanks https://github.com/pjg/dotfiles
+cnoremap <c-a> <Home>
+cnoremap <c-e> <End>
+cnoremap <c-p> <Up>
+cnoremap <c-n> <Down>
+cnoremap <c-b> <Left>
+cnoremap <c-f> <Right>
+cnoremap <c-d> <Del>
+cnoremap <c-k> <C-\>estrpart(getcmdline(), 0, getcmdpos()-1)<cr>)
 
+" Some mental screwing around with function arguments.
 nmap <leader>w "adiww"sdw"aPF,"sPww
 nmap <leader>b "sdiwF,b"adiw"sPww"aPbbb
