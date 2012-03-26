@@ -31,3 +31,6 @@
 [submodule ".vim/bundle/vim-javascript"]
 	path = .vim/bundle/vim-javascript
 	url = https://github.com/pangloss/vim-javascript.git
+[submodule ".vim/bundle/vim-indent-object"]
+	path = .vim/bundle/vim-indent-object
+	url = https://github.com/michaeljsmith/vim-indent-object.git
