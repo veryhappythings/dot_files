@@ -7,4 +7,4 @@ tabs:
   - foundry:
       layout: even-horizontal
       panes:
-        - source ~/.virtualenvs/osirium/bin/activate && python main.py -c1 -b16000 --logfileinfo foundry_os_v04.xml
+        - source ~/.virtualenvs/osirium/bin/activate && python main.py -c10 -b16000 --logfileinfo foundry_os_v04.xml
