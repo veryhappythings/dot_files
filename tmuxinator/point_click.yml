@@ -1,0 +1,12 @@
+project_name: point_click
+project_root: ~/Dropbox/code/point_click
+tabs:
+  - tests:
+      layout: even-horizontal
+      panes:
+        - python -m SimpleHTTPServer 8000
+        - guard
+  - bash:
+      layout: even-horizontal
+      panes:
+        -
