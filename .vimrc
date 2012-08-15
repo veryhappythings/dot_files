@@ -62,6 +62,9 @@ map <leader>cwd :cd %:p:h<CR>
 " NERDTree maps
 map <F2> :NERDTreeToggle<CR>
 
+" Tagbar maps
+map <F3> :TagbarToggle<CR>
+
 " ConqueTerm map
 map <leader>t :ConqueTerm bash <CR>
 
