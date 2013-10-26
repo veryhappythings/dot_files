@@ -22,8 +22,8 @@ TERM=xterm-color; export TERM
 
 test -r /sw/bin/init.sh && . /sw/bin/init.sh
 
-# RVM
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+# rbenv
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 # Tmuxinator
 [[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
