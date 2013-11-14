@@ -50,6 +50,8 @@ let g:syntastic_auto_loc_list=0
 let NERDTreeIgnore = ['\.pyc$', '\~$', '\.class$']
 let NERDTreeHighlightCursorline = 1
 
+set wildignore+=*.so,*.swp,*.zip,*.pyc,*.class
+
 " mappings
 
 let mapleader = '\'
