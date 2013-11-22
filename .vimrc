@@ -69,6 +69,9 @@ map <F3> :TagbarToggle<CR>
 
 " ConqueTerm map
 map <leader>t :ConqueTerm bash <CR>
+"
+" Ctrl-P map
+map <leader>p :CtrlP<CR>
 
 " Firefox-style command-N to jump to tabs
 map <silent> <D-1> :tabn 1<CR>
