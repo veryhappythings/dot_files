@@ -28,4 +28,4 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 # Tmuxinator
 [[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
 
-source /usr/local/share/python/virtualenvwrapper.sh
+[[ -s /usr/local/share/python/virtualenvwrapper.sh ]] && source /usr/local/share/python/virtualenvwrapper.sh
