@@ -9,8 +9,8 @@ LIGHT_GRAY="\[\033[0;37m\]"
 COLOR_NONE="\[\e[0m\]"
 
 function parse_git_branch {
-    git rev-parse --git-dir &> /dev/null
-    git_status="$(git status 2> /dev/null)"
+    command git rev-parse --git-dir &> /dev/null
+    git_status="$(command git status 2> /dev/null)"
     branch_pattern="^On branch ([^${IFS}]*)"
     remote_pattern="Your branch is (.*) of"
     diverge_pattern="Your branch and (.*) have diverged"
