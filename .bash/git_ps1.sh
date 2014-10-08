@@ -38,7 +38,7 @@ function prompt_func() {
     previous_return_value=$?;
     # prompt="${TITLEBAR}$BLUE[$RED\w$GREEN$(__git_ps1)$YELLOW$(git_dirty_flag)$BLUE]$COLOR_NONE "
 
-    prompt="${TITLEBAR}${BLUE}[${LIGHT_GRAY}\W${GREEN}$(parse_git_branch)${BLUE}]${COLOR_NONE} "
+    prompt="[$(hostname)]${TITLEBAR}${BLUE}[${LIGHT_GRAY}\W${GREEN}$(parse_git_branch)${BLUE}]${COLOR_NONE} "
     if test $previous_return_value -eq 0
     then
         PS1="${prompt}➔ "
