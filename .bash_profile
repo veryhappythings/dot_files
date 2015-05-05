@@ -9,6 +9,7 @@ export PYTHONPATH=.
 export EDITOR='mvim -f'
 export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
+export COPYFILE_DISABLE=1
 
 if [ -f ~/.pythonrc ]; then
     export PYTHONSTARTUP=~/.pythonrc
@@ -28,4 +29,4 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 # Tmuxinator
 [[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
 
-[[ -s /usr/local/share/python/virtualenvwrapper.sh ]] && source /usr/local/share/python/virtualenvwrapper.sh
+[[ -s /usr/local/bin/virtualenvwrapper.sh ]] && source /usr/local/bin/virtualenvwrapper.sh
