@@ -15,6 +15,7 @@ set ruler
 set number
 set nomousefocus
 set mousehide
+set mouse=a
 set nowrap
 
 " My default tab prefs
