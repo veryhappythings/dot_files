@@ -46,6 +46,8 @@ autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
 :highlight SignColumn guibg=darkgrey
 let g:syntastic_enable_signs=1
 let g:syntastic_auto_loc_list=0
+let g:syntastic_python_checkers = ['flake8']
+let g:syntastic_python_flake8_args='--ignore=E501'
 
 " NERDTree settings
 let NERDTreeIgnore = ['\.pyc$', '\~$', '\.class$']
