@@ -47,7 +47,7 @@ autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
 let g:syntastic_enable_signs=1
 let g:syntastic_auto_loc_list=0
 let g:syntastic_python_checkers = ['flake8']
-let g:syntastic_python_flake8_args='--ignore=E501,E121,E123,E126,E226,E24,E704'
+let g:syntastic_python_flake8_args='--ignore=E501,E121,E123,E126,E226,E24,E704,E711'
 
 " NERDTree settings
 let NERDTreeIgnore = ['\.pyc$', '\~$', '\.class$']
