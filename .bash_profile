@@ -3,7 +3,7 @@ source ~/.bash/git_ps1.sh
 source ~/.bash/functions.sh
 
 export PATH=/Users/mac/bin:/usr/local/bin:$PATH:/usr/local/mysql/bin:/usr/local/mongo/bin:/opt/local/bin:/opt/local/sbin
-export PATH=/usr/local/share/python:$PATH:$HOME/.rbenv/bin
+export PATH=$PATH:$HOME/.rbenv/bin
 
 export PYTHONPATH=.
 export EDITOR='mvim -f'
