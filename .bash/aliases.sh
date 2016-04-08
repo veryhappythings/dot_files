@@ -11,3 +11,5 @@ alias gst="git status"
 alias gbr="git branch"
 
 alias g="mvim --remote-silent"
+
+alias vsh="vagrant ssh -c"
