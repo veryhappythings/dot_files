@@ -123,9 +123,6 @@ noremap <silent><leader>qq <Esc>:call QFixToggle(0)<CR>
 map [q :cprev<CR>
 map ]q :cnext<CR>
 
-" Quicksilver
-nmap <leader>e <Plug>ActivateQS
-
 " Disable arrow keys
 inoremap  <Up>     <NOP>
 inoremap  <Down>   <NOP>
