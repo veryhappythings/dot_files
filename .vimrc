@@ -146,7 +146,3 @@ cnoremap <c-b> <Left>
 cnoremap <c-f> <Right>
 cnoremap <c-d> <Del>
 cnoremap <c-k> <C-\>estrpart(getcmdline(), 0, getcmdpos()-1)<cr>)
-
-" Some mental screwing around with function arguments.
-nmap <leader>w "adiww"sdw"aPF,"sPww
-nmap <leader>b "sdiwF,b"adiw"sPww"aPbbb
