@@ -37,3 +37,6 @@ export PATH="/usr/local/heroku/bin:$PATH"
 if [ -f ~/.bash/git-completion.bash ]; then
   . ~/.bash/git-completion.bash
 fi
+
+export NVM_DIR="$HOME/.nvm"
+. "/usr/local/opt/nvm/nvm.sh"
