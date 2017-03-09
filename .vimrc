@@ -143,3 +143,7 @@ cnoremap <c-b> <Left>
 cnoremap <c-f> <Right>
 cnoremap <c-d> <Del>
 cnoremap <c-k> <C-\>estrpart(getcmdline(), 0, getcmdpos()-1)<cr>)
+
+" SnipMate
+imap <C-J> <esc>a<Plug>snipMateNextOrTrigger
+smap <C-J> <Plug>snipMateNextOrTrigger
