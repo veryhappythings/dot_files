@@ -5,7 +5,7 @@ if ! has('gui')
   set t_Co=256
 endif
 
-colorscheme molokai_mac
+colorscheme hybrid
 let g:molokai_original = 0
 syntax on
 

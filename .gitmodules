@@ -49,3 +49,6 @@
 [submodule ".vim/bundle/tlib_vim"]
 	path = .vim/bundle/tlib_vim
 	url = git@github.com:tomtom/tlib_vim.git
+[submodule ".vim/bundle/vim-hybrid"]
+	path = .vim/bundle/vim-hybrid
+	url = git@github.com:w0ng/vim-hybrid.git
