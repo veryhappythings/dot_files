@@ -6,7 +6,6 @@ if ! has('gui')
 endif
 
 colorscheme hybrid
-let g:molokai_original = 0
 syntax on
 
 " Default indenting etc

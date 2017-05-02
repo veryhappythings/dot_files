@@ -1,6 +1,5 @@
 " Colour scheme
-colorscheme molokai_mac
-let g:molokai_original = 0
+colorscheme hybrid
 " set guifont=Menlo:h14
 set macligatures
 set guifont=Fira\ Code:h14
