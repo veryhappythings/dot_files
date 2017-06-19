@@ -40,3 +40,5 @@ fi
 
 export NVM_DIR="$HOME/.nvm"
 . "/usr/local/opt/nvm/nvm.sh"
+
+export OSIRIUM_MAIN_PATH=/Users/mac/Documents/code/osirium-main
