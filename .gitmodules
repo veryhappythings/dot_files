@@ -52,3 +52,6 @@
 [submodule ".vim/bundle/vim-hybrid"]
 	path = .vim/bundle/vim-hybrid
 	url = git@github.com:w0ng/vim-hybrid.git
+[submodule ".vim/bundle/vim-jsx"]
+	path = .vim/bundle/vim-jsx
+	url = git@github.com:mxw/vim-jsx.git
