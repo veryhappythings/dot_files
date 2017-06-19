@@ -6,7 +6,9 @@ ln -sf ${PWD}/.ackrc ~/.ackrc
 ln -sf ${PWD}/.bash_profile ~/.bash_profile
 ln -sf ${PWD}/.bash_profile ~/.bashrc
 ln -sf ${PWD}/.pythonrc.py ~/.pythonrc.py
+ln -sf ${PWD}/zshrc ~/.zshrc
 
 ln -s ${PWD}/tmuxinator ~/.tmuxinator
 ln -s ${PWD}/.bash ~/.bash
+ln -s ${PWD}/oh-my-zsh-custom ~/.oh-my-zsh-custom
 ln -s ${PWD}/.vim ~/.vim
