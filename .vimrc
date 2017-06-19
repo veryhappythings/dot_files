@@ -52,6 +52,11 @@ let g:syntastic_python_flake8_args='--ignore=E501,E121,E123,E126,E226,E24,E704,E
 let NERDTreeIgnore = ['\.pyc$', '\~$', '\.class$']
 let NERDTreeHighlightCursorline = 1
 
+" Ctrl-P settings
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  'node_modules',
+  \ }
+
 set wildignore+=*.so,*.swp,*.zip,*.pyc,*.class
 
 " mappings
