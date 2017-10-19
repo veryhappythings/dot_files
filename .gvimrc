@@ -11,3 +11,5 @@ set fuoptions=maxvert,maxhorz
 set columns=136
 set lines=40
 " set noantialias
+
+set laststatus=2
