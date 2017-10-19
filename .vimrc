@@ -57,6 +57,10 @@ let g:ctrlp_custom_ignore = {
   \ 'dir':  'node_modules',
   \ }
 
+let g:lightline = {
+  \ 'colorscheme': 'solarized',
+  \ }
+
 set wildignore+=*.so,*.swp,*.zip,*.pyc,*.class
 
 " mappings
