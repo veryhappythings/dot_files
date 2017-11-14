@@ -80,9 +80,11 @@ map <F3> :TagbarToggle<CR>
 
 " ConqueTerm map
 map <leader>t :ConqueTerm bash <CR>
-"
-" Ctrl-P map
-map <leader>p :CtrlP<CR>
+
+" fzf map
+map <leader>p :Files<CR>
+map <C-p> :Files<CR>
+map <C-b> :Buffers<CR>
 
 " Firefox-style command-N to jump to tabs
 map <silent> <D-1> :tabn 1<CR>
