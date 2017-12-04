@@ -7,4 +7,4 @@ ln -sf ${PWD}/fzf.sh ~/.fzf.sh
 
 ln -s ${PWD}/tmuxinator ~/.tmuxinator
 ln -s ${PWD}/oh-my-zsh-custom ~/.oh-my-zsh-custom
-ln -s ${PWD}/.vim ~/.vim
+ln -s ${PWD}/vim ~/.vim
