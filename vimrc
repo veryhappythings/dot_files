@@ -26,6 +26,9 @@ set smarttab
 set expandtab
 set smartindent
 
+" Scroll 2 lines from edge of screen
+set scrolloff=2
+
 filetype plugin indent on
 " Load Less files as the CSS filetype
 au BufRead,BufNewFile *.less setfiletype css
