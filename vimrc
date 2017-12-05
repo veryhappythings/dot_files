@@ -5,6 +5,7 @@ if ! has('gui')
   set t_Co=256
 endif
 
+let g:hybrid_custom_term_colors = 1
 colorscheme hybrid
 syntax on
 
