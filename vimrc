@@ -45,6 +45,9 @@ fun! <SID>StripTrailingWhitespaces()
 endfun
 autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
 
+" Highlight VCS conflict markers
+match ErrorMsg '^\(<\|=\|>\)\{7\}\([^=].\+\)\?$'
+
 " Syntastic
 :highlight SignColumn guibg=darkgrey
 let g:syntastic_enable_signs=1
