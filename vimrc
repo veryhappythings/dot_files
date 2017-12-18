@@ -26,6 +26,9 @@ set smarttab
 set expandtab
 set smartindent
 
+" Sensible backspace behaviour in terminal
+set backspace=2
+
 " Scroll 2 lines from edge of screen
 set scrolloff=2
 
