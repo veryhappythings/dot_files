@@ -3,7 +3,7 @@ ln -sf ${PWD}/ackrc ~/.ackrc
 ln -sf ${PWD}/vimrc ~/.vimrc
 ln -sf ${PWD}/gvimrc ~/.gvimrc
 ln -sf ${PWD}/zshrc ~/.zshrc
-ln -sf ${PWD}/fzf.sh ~/.fzf.sh
+ln -sf ${PWD}/fzf.zsh ~/.fzf.zsh
 
 ln -s ${PWD}/tmuxinator ~/.tmuxinator
 ln -s ${PWD}/oh-my-zsh-custom ~/.oh-my-zsh-custom
