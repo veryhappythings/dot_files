@@ -32,6 +32,9 @@ set backspace=2
 " Scroll 2 lines from edge of screen
 set scrolloff=2
 
+" Immediately time out when leaving modes
+set timeoutlen=1000 ttimeoutlen=0
+
 filetype plugin indent on
 " Load Less files as the CSS filetype
 au BufRead,BufNewFile *.less setfiletype css
