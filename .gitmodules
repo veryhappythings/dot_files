@@ -49,3 +49,6 @@
 [submodule "vim/bundle/ale"]
 	path = vim/bundle/ale
 	url = https://github.com/w0rp/ale.git
+[submodule "vim/bundle/mustache"]
+	path = vim/bundle/mustache
+	url = git://github.com/mustache/vim-mustache-handlebars.git
