@@ -1,1 +1,1 @@
-function vcd() { mvim -c "cd $@" ;}
+function vcd() { vim -c "cd $@" ;}
