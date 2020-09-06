@@ -2,8 +2,8 @@
 ! https://github.com/chriskempson/tomorrow-theme/blob/master/vim/colors/Tomorrow-Night.vim
 ! vim: ft=xdefaults
 
-URxvt.font:xft:FiraMono-Regular:pixelsize=15
-URxvt.boldfont:xft:FiraMono-Bold:pixelsize=15
+URxvt.font:xft:FiraCode-Regular:pixelsize=15
+URxvt.boldfont:xft:FiraCode-Bold:pixelsize=15
 
 *background: #1D1F21
 *foreground: #C5C8C6
