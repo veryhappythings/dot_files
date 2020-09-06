@@ -55,6 +55,8 @@ autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
 " Highlight VCS conflict markers
 match ErrorMsg '^\(<\|=\|>\)\{7\}\([^=].\+\)\?$'
 
+let g:python3_host_prog = '/home/mac/.pyenv/versions/vi/bin/python'
+
 " Syntastic
 :highlight SignColumn guibg=darkgrey
 let g:syntastic_enable_signs=1
@@ -70,6 +72,17 @@ let NERDTreeHighlightCursorline = 1
 let g:ctrlp_custom_ignore = {
   \ 'dir':  'node_modules',
   \ }
+
+" Deoplete
+let g:deoplete#omni_patterns = {}
+
+call deoplete#custom#option('omni_patterns', {
+\ 'complete_method': 'omnifunc',
+\ 'terraform': '[^ *\t"{=$]\w*',
+\})
+
+call deoplete#initialize()
+" let g:deoplete#enable_at_startup = 1
 
 let g:lightline = {
   \ 'colorscheme': 'solarized',
