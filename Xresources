@@ -31,3 +31,6 @@ URxvt.boldfont:xft:FiraCode-Bold:pixelsize=15
 ! white
 *color7: #707880
 *color15: #C5C8C6
+
+Rxvt.pointerBlank: true
+Rxvt.scrollBar: false
