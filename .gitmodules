@@ -79,3 +79,48 @@
 [submodule "vim/bundle/vim-terraform"]
 	path = vim/bundle/vim-terraform
 	url = https://github.com/hashivim/vim-terraform.git
+[submodule "config/nvim/pack/mac/start/vim-hybrid"]
+	path = config/nvim/pack/mac/start/vim-hybrid
+	url = git@github.com:w0ng/vim-hybrid.git
+[submodule "config/nvim/pack/mac/start/nerdtree"]
+	path = config/nvim/pack/mac/start/nerdtree
+	url = git://github.com/scrooloose/nerdtree.git
+[submodule "config/nvim/pack/mac/start/vim-surround"]
+	path = config/nvim/pack/mac/start/vim-surround
+	url = http://github.com/tpope/vim-surround.git
+[submodule "config/nvim/pack/mac/start/demlimitMate"]
+	path = config/nvim/pack/mac/start/delimitMate
+	url = git://github.com/Raimondi/delimitMate.git
+[submodule "config/nvim/pack/mac/start/tagbar"]
+	path = config/nvim/pack/mac/start/tagbar
+	url = https://github.com/majutsushi/tagbar.git
+[submodule "config/nvim/pack/mac/start/ack.vim"]
+	path = config/nvim/pack/mac/start/ack.vim
+	url = git://github.com/mileszs/ack.vim.git
+[submodule "config/nvim/pack/mac/start/lightline.vim"]
+	path = config/nvim/pack/mac/start/lightline.vim
+	url = https://github.com/itchyny/lightline.vim
+[submodule "config/nvim/pack/mac/start/fzf.vim"]
+	path = config/nvim/pack/mac/start/fzf.vim
+	url = git@github.com:junegunn/fzf.vim.git
+[submodule "config/nvim/pack/mac/start/ale"]
+	path = config/nvim/pack/mac/start/ale
+	url = https://github.com/w0rp/ale.git
+[submodule "config/nvim/pack/mac/start/vim-flavored-markdown"]
+	path = config/nvim/pack/mac/start/vim-flavored-markdown
+	url = https://github.com/jtratner/vim-flavored-markdown.git
+[submodule "config/nvim/pack/mac/start/editorconfig-vim"]
+	path = config/nvim/pack/mac/start/editorconfig-vim
+	url = https://github.com/editorconfig/editorconfig-vim.git
+[submodule "config/nvim/pack/mac/start/deoplete.nvim"]
+	path = config/nvim/pack/mac/start/deoplete.nvim
+	url = https://github.com/Shougo/deoplete.nvim.git
+[submodule "config/nvim/pack/mac/start/deoplete-jedi"]
+	path = config/nvim/pack/mac/start/deoplete-jedi
+	url = https://github.com/deoplete-plugins/deoplete-jedi
+[submodule "config/nvim/pack/mac/start/vim-terraform-completion"]
+	path = config/nvim/pack/mac/start/vim-terraform-completion
+	url = https://github.com/juliosueiras/vim-terraform-completion.git
+[submodule "config/nvim/pack/mac/start/vim-terraform"]
+	path = config/nvim/pack/mac/start/vim-terraform
+	url = https://github.com/hashivim/vim-terraform.git
