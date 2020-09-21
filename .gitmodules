@@ -112,18 +112,9 @@
 [submodule "config/nvim/pack/mac/start/editorconfig-vim"]
 	path = config/nvim/pack/mac/start/editorconfig-vim
 	url = https://github.com/editorconfig/editorconfig-vim.git
-[submodule "config/nvim/pack/mac/start/deoplete.nvim"]
-	path = config/nvim/pack/mac/start/deoplete.nvim
-	url = https://github.com/Shougo/deoplete.nvim.git
-[submodule "config/nvim/pack/mac/start/deoplete-jedi"]
-	path = config/nvim/pack/mac/start/deoplete-jedi
-	url = https://github.com/deoplete-plugins/deoplete-jedi
 [submodule "config/nvim/pack/mac/start/vim-terraform"]
 	path = config/nvim/pack/mac/start/vim-terraform
 	url = https://github.com/hashivim/vim-terraform.git
 [submodule "config/nvim/pack/mac/start/nvim-lspconfig"]
 	path = config/nvim/pack/mac/start/nvim-lspconfig
 	url = https://github.com/neovim/nvim-lspconfig.git
-[submodule "config/nvim/pack/mac/start/deoplete-lsp"]
-	path = config/nvim/pack/mac/start/deoplete-lsp
-	url = https://github.com/Shougo/deoplete-lsp.git
