@@ -10,3 +10,5 @@ alias vsh="vagrant ssh -c"
 alias did="vim +'normal Go' +'r!date' ~/Dropbox/did.txt"
 
 alias tf="terraform"
+
+alias nv="nvim"
