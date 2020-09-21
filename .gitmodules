@@ -127,3 +127,9 @@
 [submodule "config/nvim/pack/mac/start/deoplete-lsp"]
 	path = config/nvim/pack/mac/start/deoplete-lsp
 	url = https://github.com/Shougo/deoplete-lsp.git
+[submodule "config/nvim/pack/mac/start/neosnippet.vim"]
+	path = config/nvim/pack/mac/start/neosnippet.vim
+	url = https://github.com/Shougo/neosnippet.vim.git
+[submodule "config/nvim/pack/mac/start/neosnippet-snippets"]
+	path = config/nvim/pack/mac/start/neosnippet-snippets
+	url = https://github.com/Shougo/neosnippet-snippets.git

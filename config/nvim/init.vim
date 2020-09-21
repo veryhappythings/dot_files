@@ -67,9 +67,16 @@ let g:ctrlp_custom_ignore = {
   \ 'dir':  'node_modules',
   \ }
 
+" nvim-lsp
+lua <<EOF
+vim.cmd('packadd nvim-lspconfig')
+require'nvim_lsp'.terraformls.setup{
+    cmd = {"terraform-ls", "serve"};
+}
+EOF
+
 " Deoplete
 let g:deoplete#enable_at_startup = 1
-let g:terraform_registry_module_completion = 1
 
 let g:lightline = {
   \ 'colorscheme': 'solarized',
@@ -176,3 +183,13 @@ smap <C-J> <Plug>snipMateNextOrTrigger
 " Maybe fzf just replaces this?
 "let g:ackprg = 'ag --vimgrep --smart-case'
 " cnoreabbrev Ag Ack
+
+let g:neosnippet#enable_completed_snippet = 1
+let g:neosnippet#enable_complete_done = 1
+" SuperTab like snippets behavior.
+" Note: It must be "imap" and "smap".  It uses <Plug> mappings.
+imap <expr><TAB>
+ \ neosnippet#expandable_or_jumpable() ?
+ \    "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
+smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
+\ "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
