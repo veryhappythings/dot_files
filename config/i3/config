@@ -33,7 +33,7 @@ new_window pixel 1
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec TERMINAL=rxvt i3-sensible-terminal
+bindsym $mod+Return exec TERMINAL=~/.bin/kitty i3-sensible-terminal
 
 # kill focused window
 bindsym $mod+Shift+q kill
