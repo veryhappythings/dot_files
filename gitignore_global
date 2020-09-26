@@ -51,3 +51,6 @@ tags
 __pycache__/
 *.py[cod]
 *$py.class
+
+# Javascript
+node_modules
