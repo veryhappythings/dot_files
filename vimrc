@@ -1,5 +1,7 @@
 " Pathogen
-call pathogen#infect()
+if ! has('nvim')
+    call pathogen#infect()
+endif
 
 if ! has('gui')
   set t_Co=256
@@ -74,15 +76,14 @@ let g:ctrlp_custom_ignore = {
   \ }
 
 " Deoplete
-let g:deoplete#omni_patterns = {}
+let g:deoplete#enable_at_startup = 1
+let g:terraform_registry_module_completion = 1
 
-call deoplete#custom#option('omni_patterns', {
-\ 'complete_method': 'omnifunc',
-\ 'terraform': '[^ *\t"{=$]\w*',
-\})
-
-call deoplete#initialize()
-" let g:deoplete#enable_at_startup = 1
+if has('nvim')
+    let g:deoplete#enable_at_startup = 1
+else
+    call deoplete#initialize()
+endif
 
 let g:lightline = {
   \ 'colorscheme': 'solarized',
