@@ -1,7 +1,7 @@
 configuration {
-    modi: "window,drun,ssh,combi";
+    modi: "window,drun,ssh,combi,run";
     theme: "solarized";
     font: "FiraCode 16";
-    combi-modi: "window,drun,ssh";
+    combi-modi: "window,drun,ssh,run";
 }
 
