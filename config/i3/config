@@ -9,7 +9,9 @@
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
+# Super
 set $mod Mod4
+set $alt Mod1
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -44,6 +46,9 @@ bindsym $mod+d exec --no-startup-id rofi -show combi
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
 # bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
+
+# Lock screen
+bindsym $mod+$alt+Control+l exec --no-startup-id i3lock --image=/home/mac/Pictures/wallpaper/lockscreen.png --tiling
 
 # change focus
 bindsym $mod+j focus left
