@@ -4,6 +4,7 @@ ln -sf ${PWD}/vimrc ~/.vimrc
 ln -sf ${PWD}/gvimrc ~/.gvimrc
 ln -sf ${PWD}/gitconfig ~/.gitconfig
 ln -sf ${PWD}/gitignore_global ~/.gitignore_global
+ln -sf ${PWD}/gitattributes ~/.gitattributes
 ln -sf ${PWD}/zshrc ~/.zshrc
 ln -sf ${PWD}/fzf.zsh ~/.fzf.zsh
 ln -sf ${PWD}/Xresources ~/.Xresources
