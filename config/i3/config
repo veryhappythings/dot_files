@@ -167,3 +167,5 @@ bar {
         tray_padding 5
         font pango:FiraCode Light 16
 }
+
+exec_always --no-startup-id "picom --config ~/.config/picom/picom.conf -b"
