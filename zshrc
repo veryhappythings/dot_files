@@ -1,4 +1,4 @@
-export PATH=~/.local/bin:~/.bin:$PATH
+export PATH=~/.local/bin:~/.bin:/snap/bin:~/.rbenv/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
@@ -50,7 +50,7 @@ ZSH_CUSTOM=~/.oh-my-zsh-custom
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(bgnotify git zsh-syntax-highlighting)
+plugins=(bgnotify git wd zsh-syntax-highlighting kubectl)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -85,8 +85,29 @@ source $ZSH/oh-my-zsh.sh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 if command -v pyenv 1>/dev/null 2>&1; then
-  eval "$(pyenv init -)"
+  #eval "$(pyenv init -)"
   eval "$(pyenv virtualenv-init -)"
+  export PYENV_ROOT="$HOME/.pyenv"
+  export PATH="$PYENV_ROOT/bin:$PATH"
+  eval "$(pyenv init --path)"
 fi
 
+
+# Load pyenv into the shell by adding
+# the following to ~/.zshrc:
+
+eval "$(pyenv init -)"
+
+eval "$(rbenv init -)"
+
 export TERMINAL=rxvt
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/home/mac/.sdkman"
+[[ -s "/home/mac/.sdkman/bin/sdkman-init.sh" ]] && source "/home/mac/.sdkman/bin/sdkman-init.sh"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/home/mac/.google-cloud-sdk/path.zsh.inc' ]; then . '/home/mac/.google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/home/mac/.google-cloud-sdk/completion.zsh.inc' ]; then . '/home/mac/.google-cloud-sdk/completion.zsh.inc'; fi
