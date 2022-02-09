@@ -49,6 +49,7 @@ bindsym $mod+d exec --no-startup-id rofi -show combi
 
 # Lock screen
 bindsym $mod+$alt+Control+l exec --no-startup-id i3lock --image=/home/mac/Pictures/wallpaper/lockscreen.png --tiling
+exec always --no-startup-id xautolock -time 5 -locker "i3lock --image=/home/mac/Pictures/wallpaper/lockscreen.png --tiling"
 
 # change focus
 bindsym $mod+j focus left
