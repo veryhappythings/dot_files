@@ -83,6 +83,8 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+[ -f ~/.env ] && source ~/.env
+
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 if command -v pyenv 1>/dev/null 2>&1; then
   #eval "$(pyenv init -)"
