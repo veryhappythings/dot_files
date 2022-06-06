@@ -133,3 +133,6 @@
 [submodule "config/nvim/pack/mac/start/neosnippet-snippets"]
 	path = config/nvim/pack/mac/start/neosnippet-snippets
 	url = https://github.com/Shougo/neosnippet-snippets.git
+[submodule "config/nvim/pack/mac/start/vim-go"]
+	path = config/nvim/pack/mac/start/vim-go
+	url = git@github.com:fatih/vim-go.git
