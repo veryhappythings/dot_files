@@ -113,3 +113,6 @@ if [ -f '/home/mac/.google-cloud-sdk/path.zsh.inc' ]; then . '/home/mac/.google-
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/home/mac/.google-cloud-sdk/completion.zsh.inc' ]; then . '/home/mac/.google-cloud-sdk/completion.zsh.inc'; fi
+
+export GOPATH=~/go
+export PATH=$PATH:~/go/bin
