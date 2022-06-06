@@ -31,6 +31,7 @@ set scrolloff=2
 set timeoutlen=1000 ttimeoutlen=0
 
 filetype plugin indent on
+set omnifunc=syntaxcomplete#Complete
 " Load Less files as the CSS filetype
 au BufRead,BufNewFile *.less setfiletype css
 
@@ -51,13 +52,6 @@ match ErrorMsg '^\(<\|=\|>\)\{7\}\([^=].\+\)\?$'
 
 let g:python3_host_prog = '/home/mac/.pyenv/versions/vi/bin/python'
 
-" Syntastic
-:highlight SignColumn guibg=darkgrey
-let g:syntastic_enable_signs=1
-let g:syntastic_auto_loc_list=0
-let g:syntastic_python_checkers = ['flake8']
-let g:syntastic_python_flake8_args='--ignore=E121,E123,E126'
-
 " NERDTree settings
 let NERDTreeIgnore = ['\.pyc$', '\~$', '\.class$']
 let NERDTreeHighlightCursorline = 1
@@ -67,16 +61,15 @@ let g:ctrlp_custom_ignore = {
   \ 'dir':  'node_modules',
   \ }
 
-" nvim-lsp
+" LSP
+" gopls for golang
+" Autocomplete from ALE
 lua <<EOF
 vim.cmd('packadd nvim-lspconfig')
-require'nvim_lsp'.terraformls.setup{
-    cmd = {"terraform-ls", "serve"};
-}
+require'lspconfig'.gopls.setup{}
 EOF
-
-" Deoplete
-let g:deoplete#enable_at_startup = 1
+let g:ale_completion_enabled = 1
+let g:ale_linters_ignore = ['golint']
 
 let g:lightline = {
   \ 'colorscheme': 'solarized',
@@ -98,9 +91,6 @@ map <F2> :NERDTreeToggle<CR>
 
 " Tagbar maps
 map <F3> :TagbarToggle<CR>
-
-" ConqueTerm map
-map <leader>t :ConqueTerm bash <CR>
 
 " fzf map
 map <leader>p :Files<CR>
@@ -175,21 +165,14 @@ cnoremap <c-f> <Right>
 cnoremap <c-d> <Del>
 cnoremap <c-k> <C-\>estrpart(getcmdline(), 0, getcmdpos()-1)<cr>)
 
-" SnipMate
-imap <C-J> <esc>a<Plug>snipMateNextOrTrigger
-smap <C-J> <Plug>snipMateNextOrTrigger
-
 " Make Ack.vim run ag
 " Maybe fzf just replaces this?
 "let g:ackprg = 'ag --vimgrep --smart-case'
 " cnoreabbrev Ag Ack
 
-let g:neosnippet#enable_completed_snippet = 1
-let g:neosnippet#enable_complete_done = 1
-" SuperTab like snippets behavior.
-" Note: It must be "imap" and "smap".  It uses <Plug> mappings.
-imap <expr><TAB>
- \ neosnippet#expandable_or_jumpable() ?
- \    "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
-smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
-\ "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
+" Load all plugins now.
+" Plugins need to be added to runtimepath before helptags can be generated.
+packloadall
+" Load all of the helptags now, after plugins have been loaded.
+" All messages and errors will be ignored.
+silent! helptags ALL
