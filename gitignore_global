@@ -2,6 +2,7 @@
 .DS_Store
 .AppleDouble
 .LSOverride
+nohup.*
 
 # Icon must end with two \r
 Icon
@@ -54,3 +55,8 @@ __pycache__/
 
 # Javascript
 node_modules
+
+# IDEs
+.idea/
+.vscode/
+*.iml
