@@ -12,3 +12,11 @@ alias did="vim +'normal Go' +'r!date' ~/Dropbox/did.txt"
 alias tf="terraform"
 
 alias nv="nvim"
+
+if type exa &> /dev/null; then
+    alias ls=exa
+fi
+
+if type batcat &> /dev/null; then
+    alias cat=batcat
+fi
