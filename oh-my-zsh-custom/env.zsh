@@ -1,3 +1,3 @@
 export PYTHONPATH=.
-export EDITOR='vim -f'
+export EDITOR='nvim'
 export COPYFILE_DISABLE=1
