@@ -5,6 +5,6 @@
 XKBMODEL="pc105"
 XKBLAYOUT="gb"
 XKBVARIANT=""
-XKBOPTIONS="ctrl:nocaps"
+XKBOPTIONS="ctrl:nocaps,altwin:menu_win"
 
 BACKSPACE="guess"
