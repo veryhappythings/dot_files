@@ -54,6 +54,9 @@ plugins=(bgnotify git wd zsh-syntax-highlighting kubectl ssh-agent)
 
 source $ZSH/oh-my-zsh.sh
 
+# Speed up pasting text when using oh-my-zsh and zsh-syntax-highlighting
+zstyle ':bracketed-paste-magic' active-widgets '.self-*'
+
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
