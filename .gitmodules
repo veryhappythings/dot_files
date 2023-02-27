@@ -136,3 +136,6 @@
 [submodule "config/nvim/pack/mac/start/vim-go"]
 	path = config/nvim/pack/mac/start/vim-go
 	url = git@github.com:fatih/vim-go.git
+[submodule "config/nvim/pack/mac/start/copilot.vim"]
+	path = config/nvim/pack/mac/start/copilot.vim
+	url = https://github.com/github/copilot.vim.git
