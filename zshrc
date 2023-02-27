@@ -89,6 +89,7 @@ zstyle ':bracketed-paste-magic' active-widgets '.self-*'
 [ -f ~/.env ] && source ~/.env
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
 if command -v pyenv 1>/dev/null 2>&1; then
   #eval "$(pyenv init -)"
   eval "$(pyenv virtualenv-init -)"
@@ -97,13 +98,9 @@ if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init --path)"
 fi
 
-
-# Load pyenv into the shell by adding
-# the following to ~/.zshrc:
-
-eval "$(pyenv init -)"
-
-eval "$(rbenv init -)"
+if command -v rbenv 1>/dev/null 2>&1; then
+  eval "$(rbenv init -)"
+fi
 
 export TERMINAL=rxvt
 
@@ -119,3 +116,8 @@ if [ -f '/home/mac/.google-cloud-sdk/completion.zsh.inc' ]; then . '/home/mac/.g
 
 export GOPATH=~/go
 export PATH=$PATH:~/go/bin
+
+if [ -d '$HOME/.nodenv' ]; then
+  export PATH="$HOME/.nodenv/bin:$PATH"
+  eval "$(nodenv init -)"
+fi
