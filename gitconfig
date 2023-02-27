@@ -1,6 +1,7 @@
 [user]
 	name = Mac Chapman
 	email = mac@veryhappythings.co.uk
+	signingkey = /home/mac/.ssh/id_rsa.pub
 [alias]
 	co = checkout
 [core]
@@ -27,3 +28,11 @@
 	whitespace = red reverse
 [diff]
 	noprefix = true
+[init]
+	defaultBranch = main
+[gpg]
+	format = ssh
+[commit]
+	gpgsign = true
+[tag]
+	gpgsign = true
