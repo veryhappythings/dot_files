@@ -1,18 +1,12 @@
 [submodule ".vim/bundle/ack.vim"]
 	path = vim/bundle/ack.vim
-	url = git://github.com/mileszs/ack.vim.git
-[submodule ".vim/bundle/nerdtree"]
-	path = vim/bundle/nerdtree
-	url = git://github.com/scrooloose/nerdtree.git
+	url = https://github.com/mileszs/ack.vim.git
 [submodule ".vim/bundle/surround"]
 	path = vim/bundle/surround
 	url = http://github.com/tpope/vim-surround.git
 [submodule ".vim/bundle/snipmate.vim"]
 	path = vim/bundle/snipmate.vim
 	url = http://github.com/garbas/vim-snipmate.git
-[submodule ".vim/bundle/delimitMate"]
-	path = vim/bundle/delimitMate
-	url = git://github.com/Raimondi/delimitMate.git
 [submodule ".vim/bundle/vim-indent-object"]
 	path = vim/bundle/vim-indent-object
 	url = https://github.com/michaeljsmith/vim-indent-object.git
@@ -45,7 +39,7 @@
 	url = https://github.com/w0rp/ale.git
 [submodule "vim/bundle/mustache"]
 	path = vim/bundle/mustache
-	url = git://github.com/mustache/vim-mustache-handlebars.git
+	url = https://github.com/mustache/vim-mustache-handlebars.git
 [submodule "oh-my-zsh-custom/plugins/zsh-syntax-highlighting"]
 	path = oh-my-zsh-custom/plugins/zsh-syntax-highlighting
 	url = https://github.com/zsh-users/zsh-syntax-highlighting.git
@@ -84,19 +78,19 @@
 	url = git@github.com:w0ng/vim-hybrid.git
 [submodule "config/nvim/pack/mac/start/nerdtree"]
 	path = config/nvim/pack/mac/start/nerdtree
-	url = git://github.com/scrooloose/nerdtree.git
+	url = https://github.com/scrooloose/nerdtree.git
 [submodule "config/nvim/pack/mac/start/vim-surround"]
 	path = config/nvim/pack/mac/start/vim-surround
 	url = http://github.com/tpope/vim-surround.git
-[submodule "config/nvim/pack/mac/start/demlimitMate"]
+[submodule "config/nvim/pack/mac/start/delimitMate"]
 	path = config/nvim/pack/mac/start/delimitMate
-	url = git://github.com/Raimondi/delimitMate.git
+	url = https://github.com/Raimondi/delimitMate.git
 [submodule "config/nvim/pack/mac/start/tagbar"]
 	path = config/nvim/pack/mac/start/tagbar
 	url = https://github.com/majutsushi/tagbar.git
 [submodule "config/nvim/pack/mac/start/ack.vim"]
 	path = config/nvim/pack/mac/start/ack.vim
-	url = git://github.com/mileszs/ack.vim.git
+	url = https://github.com/mileszs/ack.vim.git
 [submodule "config/nvim/pack/mac/start/lightline.vim"]
 	path = config/nvim/pack/mac/start/lightline.vim
 	url = https://github.com/itchyny/lightline.vim
@@ -139,3 +133,11 @@
 [submodule "config/nvim/pack/mac/start/copilot.vim"]
 	path = config/nvim/pack/mac/start/copilot.vim
 	url = https://github.com/github/copilot.vim.git
+[submodule "vim/bundle/delimitMate"]
+    path = vim/bundle/delimitMate
+	url = https://github.com/Raimondi/delimitMate.git
+[submodule "vim/bundle/ack.vim"]
+	url = https://github.com/mileszs/ack.vim.git
+[submodule "vim/bundle/nerdtree"]
+    path = vim/bundle/nerdtree
+	url = https://github.com/scrooloose/nerdtree.git
