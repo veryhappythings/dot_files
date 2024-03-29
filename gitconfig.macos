@@ -1,0 +1,38 @@
+[user]
+	name = Mac Chapman
+	email = mac@veryhappythings.co.uk
+	signingkey = /Users/mac/.ssh/id_rsa.pub
+[alias]
+	co = checkout
+[core]
+	excludesfile = /Users/mac/.gitignore_global
+	pager = diff-so-fancy | less --tabs=4 -RFX
+	attributesfile = /Users/mac/.gitattributes
+[merge]
+	conflictstyle = diff3
+[rerere]
+	enabled = true
+[color]
+	ui = true
+[color "diff-highlight"]
+	oldNormal = red bold
+	oldHighlight = red bold 52
+	newNormal = green bold
+	newHighlight = green bold 22
+[color "diff"]
+	meta = yellow
+	frag = magenta bold
+	commit = yellow bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse
+[diff]
+	noprefix = true
+[init]
+	defaultBranch = main
+[gpg]
+	format = ssh
+[commit]
+	gpgsign = true
+[tag]
+	gpgsign = true
