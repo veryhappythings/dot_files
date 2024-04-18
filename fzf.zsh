@@ -4,13 +4,7 @@ if [[ ! "$PATH" == */home/mac/.fzf/bin* ]]; then
   export PATH="${PATH:+${PATH}:}/home/mac/.fzf/bin"
 fi
 
-# Auto-completion
-# ---------------
-[[ $- == *i* ]] && source "/home/mac/.fzf/shell/completion.zsh" 2> /dev/null
-
-# Key bindings
-# ------------
-source "/home/mac/.fzf/shell/key-bindings.zsh"
+eval "$(fzf --zsh)"
 
 # Use ripgrep
 # -----------
