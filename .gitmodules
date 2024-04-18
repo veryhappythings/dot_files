@@ -141,3 +141,6 @@
 [submodule "vim/bundle/nerdtree"]
     path = vim/bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
+[submodule "oh-my-zsh-custom/plugins/nix-shell"]
+	path = oh-my-zsh-custom/plugins/nix-shell
+	url = https://github.com/chisui/zsh-nix-shell.git
