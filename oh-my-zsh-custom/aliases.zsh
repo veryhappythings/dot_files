@@ -13,8 +13,8 @@ alias tf="terraform"
 
 alias nv="nvim"
 
-if type exa &> /dev/null; then
-    alias ls=exa
+if type eza &> /dev/null; then
+    alias ls=eza
 fi
 
 if type batcat &> /dev/null; then
