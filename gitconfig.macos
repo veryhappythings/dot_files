@@ -6,28 +6,16 @@
 	co = checkout
 [core]
 	excludesfile = /Users/mac/.gitignore_global
-	pager = diff-so-fancy | less --tabs=4 -RFX
+	pager = delta
 	attributesfile = /Users/mac/.gitattributes
+[interactive]
+    diffFilter = delta --color-only --features=interactive
 [merge]
 	conflictstyle = diff3
 [rerere]
 	enabled = true
 [color]
 	ui = true
-[color "diff-highlight"]
-	oldNormal = red bold
-	oldHighlight = red bold 52
-	newNormal = green bold
-	newHighlight = green bold 22
-[color "diff"]
-	meta = yellow
-	frag = magenta bold
-	commit = yellow bold
-	old = red bold
-	new = green bold
-	whitespace = red reverse
-[diff]
-	noprefix = true
 [init]
 	defaultBranch = main
 [gpg]
@@ -36,3 +24,16 @@
 	gpgsign = true
 [tag]
 	gpgsign = true
+[delta]
+    features = decorations
+    line-numbers = true
+[delta "interactive"]
+    keep-plus-minus-markers = false
+[delta "decorations"]
+    commit-decoration-style = blue ol
+    commit-style = raw
+    file-style = omit
+    hunk-header-decoration-style = blue box
+    hunk-header-file-style = red
+    hunk-header-line-number-style = "#067a00"
+    hunk-header-style = file line-number syntax
