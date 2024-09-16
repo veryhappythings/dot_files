@@ -89,13 +89,13 @@ zstyle ':bracketed-paste-magic' active-widgets '.self-*'
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-#if command -v pyenv 1>/dev/null 2>&1; then
-#  #eval "$(pyenv init -)"
-#  eval "$(pyenv virtualenv-init -)"
-#  export PYENV_ROOT="$HOME/.pyenv"
-#  export PATH="$PYENV_ROOT/bin:$PATH"
-#  eval "$(pyenv init --path)"
-#fi
+if command -v pyenv 1>/dev/null 2>&1; then
+  #eval "$(pyenv init -)"
+  eval "$(pyenv virtualenv-init -)"
+  export PYENV_ROOT="$HOME/.pyenv"
+  export PATH="$PYENV_ROOT/bin:$PATH"
+  eval "$(pyenv init --path)"
+fi
 #
 #if command -v rbenv 1>/dev/null 2>&1; then
 #  eval "$(rbenv init -)"
@@ -113,8 +113,8 @@ zstyle ':bracketed-paste-magic' active-widgets '.self-*'
 ## The next line enables shell command completion for gcloud.
 #if [ -f '/home/mac/.google-cloud-sdk/completion.zsh.inc' ]; then . '/home/mac/.google-cloud-sdk/completion.zsh.inc'; fi
 
-#export GOPATH=~/go
-#export PATH=$PATH:~/go/bin
+export GOPATH=~/go
+export PATH=$PATH:~/go/bin
 
 #if [ -d '$HOME/.nodenv' ]; then
 #  export PATH="$HOME/.nodenv/bin:$PATH"
