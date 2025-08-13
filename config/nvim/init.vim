@@ -83,7 +83,7 @@ let mapleader = '\'
 
 imap jj <esc>
 
-" cwd to current file's path
+" cwd to current files path
 map <leader>cwd :cd %:p:h<CR>
 
 " NERDTree maps
@@ -169,6 +169,18 @@ cnoremap <c-k> <C-\>estrpart(getcmdline(), 0, getcmdpos()-1)<cr>)
 " Maybe fzf just replaces this?
 "let g:ackprg = 'ag --vimgrep --smart-case'
 " cnoreabbrev Ag Ack
+
+set autoread
+" Triger `autoread` when files changes on disk
+" https://unix.stackexchange.com/questions/149209/refresh-changed-content-of-file-opened-in-vim/383044#383044
+" https://vi.stackexchange.com/questions/13692/prevent-focusgained-autocmd-running-in-command-line-editing-mode
+    autocmd FocusGained,BufEnter,CursorHold,CursorHoldI *
+            \ if mode() !~ '\v(c|r.?|!|t)' && getcmdwintype() == '' | checktime | endif
+
+" Notification after file change
+" https://vi.stackexchange.com/questions/13091/autocmd-event-for-autoread
+autocmd FileChangedShellPost *
+  \ echohl WarningMsg | echo "File changed on disk. Buffer reloaded." | echohl None
 
 " Load all plugins now.
 " Plugins need to be added to runtimepath before helptags can be generated.
