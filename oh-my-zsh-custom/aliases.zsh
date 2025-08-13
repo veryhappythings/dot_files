@@ -11,6 +11,6 @@ if type eza &> /dev/null; then
     alias ls=eza
 fi
 
-if type batcat &> /dev/null; then
-    alias cat=batcat
+if type bat &> /dev/null; then
+    alias cat=bat
 fi
